@@ -2,8 +2,8 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Menu from "./components/menu/Menu";
 import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
+import Projects from "./components/projects/Projects";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 

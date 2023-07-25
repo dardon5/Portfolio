@@ -25,6 +25,22 @@ export const experience = [
   },
   {
     id: 4,
+    years: "2018 - 2022",
+    title: "Software Engineering",
+    place: "St. Mary's University",
+    information:
+      "Recieved a Bachelor's Degree of Science in Software Engineering from St. Mary's University. Relevant coursework: Software Design & Architecture, Data Structures and Algorithms, Object-Oriented Programming, Files and Databases,  Software Requirements Engineering",
+  },
+  {
+    id: 5,
+    years: "2021 - 2023",
+    title: "Software Engineering",
+    place: "St. Mary's University",
+    information:
+      "Recieved a Master's Degree of Science in Software Engineering from St. Mary's University. Relevant coursework: Software Security, Java Programming, Software Project Management, Software Quality Assurance and Testing, User Interface Design.",
+  },
+  {
+    id: 6,
     years: "2023 - Present",
     title: "Software Engineer I",
     place: "Swift",
