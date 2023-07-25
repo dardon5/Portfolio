@@ -2,7 +2,7 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
-export default function Intro() {
+const Intro = () => {
   const textRef = useRef();
 
   useEffect(() => {
@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1100,
       backSpeed: 100,
-      strings: ["Software Engineer & Full-Stack Developer"],
+      strings: ["Full-Stack Developer"],
     });
   }, []);
 
@@ -34,16 +34,35 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="bottom">
-          <div className="wrapper">
-            <h4 className="intro-text">
-              I love building functional full stack applications from start to
-              finish. Get to know more about my projects and me below!
-            </h4>
-          </div>
+      <div className="bottom">
+        <div className="wrapper">
+          <h4 className="intro-text">
+            Passionate about building functional full stack applications from
+            start to finish. Based in Jacksonville, Florida.
+          </h4>
         </div>
+      </div>
+      <div className="links-container">
+        <a href="https://github.com/dardon5/" target="_blank" rel="noreferrer">
+          <img src="assets/github-logo.png" alt="Github Logo" />
+        </a>
+        <a
+          href="https://linkedin.com/in/alejandro-dardon-30b850195/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/linkedin-logo.png" alt="Linkedin Logo" />
+        </a>
+        <a
+          href="assets/resume.pdf"
+          target="_blank"
+          download={"Alejandro_Dardon_Resume.pdf"}
+        >
+          <img src="assets/resume-logo.png" alt="Resume Logo" />
+        </a>
       </div>
     </div>
   );
-}
+};
+
+export default Intro;

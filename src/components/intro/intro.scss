@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: #0f172a;
+  background-color: $colorOne;
   display: flex;
   flex-direction: column; /* Stack the top and bottom sides vertically */
   align-items: center; /* Center content horizontally */
@@ -9,13 +9,12 @@
   text-align: center;
   max-width: 1800px; /* Set a maximum width for the .intro section */
 
-  /* New code for centering the .intro container on large screens */
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 
   .intro-text {
-    color: white;
+    color: $textColor;
     font-size: 30px;
   }
 
@@ -57,7 +56,7 @@
 
         span {
           font-size: inherit;
-          color: #19beeb;
+          color: $alternate;
         }
 
         .ityped-cursor {
@@ -116,6 +115,25 @@
     }
   }
 
+  .links-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to a new row on smaller screens */
+    padding-top: 30px;
+
+    img {
+      margin: 10px; /* Add some spacing between images */
+      max-width: 35px; /* Set a maximum width for the images */
+      max-height: 35px; /* Set a maximum height for the images */
+
+      @include mobile {
+        max-width: 25px; /* Adjust image size on smaller screens */
+        max-height: 25px;
+      }
+    }
+  }
+
   /* Adjust layout for medium and large screens (2 rows of 3 images) */
   @media screen and (min-width: 768px) {
     .image-container {
@@ -133,10 +151,7 @@
         }
       }
     }
-  }
-
-  /* Position the left and right sides on top and bottom, respectively */
-  @media screen and (min-width: 768px) {
+    /* Position the left and right sides on top and bottom, respectively */
     .left {
       position: absolute;
       top: 0;

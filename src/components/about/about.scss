@@ -1,0 +1,180 @@
+@import "../../global.scss";
+
+.about {
+  background-color: $colorTwo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  .title-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .background-title {
+    font-size: 135px;
+    margin-bottom: 10px;
+    color: $textColor;
+    opacity: 0.05;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  .main-title {
+    font-size: 40px;
+    color: $textColor;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: $alternate;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .left {
+      width: 60%;
+      margin-left: 50px;
+      color: $textColor;
+      font-weight: "bold";
+      .name-title {
+        margin-bottom: 15px;
+        color: $textColor;
+        span {
+          color: $alternate;
+        }
+      }
+      .first-paragraph {
+        margin-bottom: 15px;
+        opacity: 40%;
+      }
+      .second-paragraph {
+        opacity: 40%;
+      }
+    }
+    .right {
+      width: 30%;
+      color: $textColor;
+      align-items: center;
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 20px;
+        &::after {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 1px;
+          background-color: white;
+          margin-top: 15px;
+          opacity: 5%;
+        }
+      }
+
+      span {
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+      }
+      .email {
+        color: $alternate;
+      }
+      .download {
+        background-color: $alternate;
+        border: none;
+        border-radius: 20px;
+        color: $textColor;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        padding: 10px 40px;
+      }
+      .download:hover {
+        background-color: #17a389;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .statistics-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    position: relative;
+  }
+
+  .statistic {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: calc(25% - 20px);
+    color: $textColor;
+  }
+
+  .number {
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+
+  .statistic-name {
+    font-size: 28px;
+    opacity: 0.9;
+  }
+
+  .statistics-container::before,
+  .statistics-container::after,
+  .statistics-container div:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    background-color: $textColor;
+    opacity: 5%;
+    top: 0;
+  }
+
+  .statistics-container::before {
+    left: 25%;
+  }
+
+  .statistics-container::after {
+    left: 50%;
+  }
+
+  .statistics-container div:nth-child(3)::before {
+    left: 75%;
+  }
+}

@@ -1,6 +1,6 @@
 import "./testimonials.scss";
 
-export default function Testimonials() {
+const Testimonials = () => {
   const data = [
     {
       id: 1,
@@ -49,4 +49,6 @@ export default function Testimonials() {
       </div>
     </div>
   );
-}
+};
+
+export default Testimonials;

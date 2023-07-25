@@ -1,21 +1,19 @@
 import "./topbar.scss";
-import { Person, Mail } from "@mui/icons-material";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
-            genius.
-          </a>
-          <div className="itemContainer">
-            <Person className="icon" />
-            <span>+1(210) 913-5006</span>
-          </div>
-          <div className="itemContainer">
-            <Mail className="icon" />
-            <span>alejandro_dardon@hotmail.com</span>
+          <div className="logo-container">
+            <a href="#intro">
+              <img
+                src="assets/full-stack.png"
+                height="40px"
+                width="40px"
+                alt="Logo"
+              />
+            </a>
           </div>
         </div>
         <div className="right">
@@ -28,4 +26,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       </div>
     </div>
   );
-}
+};
+
+export default Topbar;

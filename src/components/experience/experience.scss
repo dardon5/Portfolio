@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.experience {
+  background-color: $colorOne;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  .title-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .background-title {
+    font-size: 135px;
+    margin-bottom: 10px;
+    color: $textColor;
+    opacity: 0.05;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  .main-title {
+    font-size: 40px;
+    color: $textColor;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: $alternate;
+      margin: 0 125px;
+    }
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  .information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    margin-bottom: 100px;
+
+    width: 100%; /* Take up full width of the parent container */
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  // .skills-container {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   width: 100%;
+  //   margin-top: 50px; // Add some margin to separate the skills section from the previous content
+
+  //   .skill {
+  //     width: 40%;
+  //     margin: 10px; // Add some spacing between each skill item
+  //     position: relative; // Use relative positioning to manage z-index
+  //     .skill-name {
+  //       color: $textColor;
+  //       font-size: 20px;
+  //       position: relative; // Use relative positioning to manage z-index
+  //       z-index: 2; // Ensure the skill name appears on top of the progress bars
+  //     }
+
+  //     .total-bar {
+  //       position: absolute; // Position the total bar below the skill name
+  //       top: 40px; // Adjust the top position as needed
+  //       left: 0;
+  //       height: 10px;
+  //       width: 100%;
+  //       background-color: #f3f3f3;
+  //       z-index: 1; // Set z-index to be behind the progress bar
+  //     }
+
+  //     .html-bar {
+  //       position: absolute; // Position the progress bar on top of the total bar
+  //       top: 40px; // Adjust the top position to align with the total bar
+  //       left: 0;
+  //       height: 10px;
+  //       width: 70%; // Adjust the width based on skill progress
+  //       background-color: red;
+  //       z-index: 3; // Set z-index to appear on top of other elements
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,36 @@
+@import "../../global.scss";
+
+.experience-card {
+  margin: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: $colorTwo;
+  border-radius: 10px;
+  width: 40%;
+
+  .years-container {
+    width: 25%;
+    background-color: $alternate;
+    border-radius: 5px;
+    color: $textColor;
+    text-align: center;
+    padding: 5px;
+    margin: 15px 20px;
+  }
+  .title {
+    color: $textColor;
+    margin: 0px 20px 5px 20px;
+    font-size: 28px;
+  }
+  .place {
+    color: $alternate;
+    margin: 0px 20px;
+    font-size: 18px;
+  }
+  .information {
+    color: $textColor;
+    opacity: 0.8;
+    margin: 0px 20px;
+    padding: 20px 0px;
+  }
+}
