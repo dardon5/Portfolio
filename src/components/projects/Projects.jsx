@@ -2,6 +2,7 @@ import React from "react";
 import "./projects.scss";
 import { useState, useEffect, useRef } from "react";
 import PortfolioList from "./PortfolioList";
+import ProjectItem from "./ProjectItem";
 
 import {
   frontEndPortfolio,
@@ -50,7 +51,7 @@ export default function Projects() {
       const currentIndex = list.findIndex((item) => item.id === selected);
       const nextIndex = (currentIndex + 1) % list.length;
       setSelected(list[nextIndex].id);
-    }, 5000);
+    }, 100000);
 
     // Clean up the interval on component unmount
     return () => clearInterval(intervalRef.current);
@@ -72,12 +73,9 @@ export default function Projects() {
           />
         ))}
       </ul>
-      <div className="container">
+      <div className="portfolio-container">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
+          <ProjectItem project={d} key={d.id} />
         ))}
       </div>
     </div>
