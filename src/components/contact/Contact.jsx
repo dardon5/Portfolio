@@ -10,17 +10,20 @@ const Contact = () => {
   };
   return (
     <div className="contact" id="contact">
-      <div className="left">
-        <img src="assets/shake.svg" alt="" />
+      <div className="title-container">
+        <h1 className="background-title">CONTACT</h1>
+        <h1 className="main-title">Get In Touch</h1>
       </div>
-      <div className="right">
-        <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
-        </form>
+      <div className="form-container">
+        <h1 className="request">Contact Me</h1>
+        <div className="form">
+          <form>
+            <input type="text" className="box-name" placeholder="Name" />
+            <input type="email" className="box-email" placeholder="Email" />
+            <input type="number" className="box-phone" placeholder="Phone" />
+            <input type="number" className="box-phone" placeholder="Phone" />
+          </form>
+        </div>
       </div>
     </div>
   );

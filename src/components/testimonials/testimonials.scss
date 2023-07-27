@@ -1,22 +1,56 @@
 @import "../../global.scss";
 
 .testimonials {
-  background-color: #212529;
+  background-color: $colorOne;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
 
-  @include mobile {
-    justify-content: space-around;
+  .title-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
   }
 
-  h1 {
-    font-size: 50px;
+  .background-title {
+    font-size: 135px;
+    margin-bottom: 10px;
     color: $textColor;
+    opacity: 0.05;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  .main-title {
+    font-size: 40px;
+    color: $textColor;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @include mobile {
       font-size: 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 46px;
+      height: 3px;
+      background-color: $alternate;
+      margin: 0 125px;
+      margin-left: 100px;
+    }
+
+    @include mobile {
+      font-size: 25px;
     }
   }
 
@@ -42,7 +76,7 @@
       justify-content: space-around;
       padding: 20px;
       transition: all 1s ease;
-      background-color: $textColor;
+      background-color: $colorTwo;
 
       @include mobile {
         height: 180px;
@@ -76,8 +110,8 @@
             height: 25px;
           }
           &.user {
-            height: 60px;
-            width: 60px;
+            height: 80px;
+            width: 80px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;
@@ -91,9 +125,13 @@
       }
 
       .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(250, 244, 245);
+        color: $textColor;
+        opacity: 0.8;
 
         @include mobile {
           font-size: 12px;
@@ -106,15 +144,17 @@
         flex-direction: column;
         justify-content: center;
 
-        h3 {
+        h2 {
           margin-bottom: 5px;
+          color: $textColor;
+          font-weight: bold;
 
           @include mobile {
             font-size: 14px;
           }
         }
-        h4 {
-          color: rgb(121, 115, 115);
+        h3 {
+          color: $alternate;
           @include mobile {
             font-size: 13px;
           }
