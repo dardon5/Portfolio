@@ -5,12 +5,13 @@ const ProjectItem = (props) => {
   const project = props.project;
   return (
     <div className="portfolio-item">
-      <img
-        src="https://via.placeholder.com/300"
-        alt="Project"
-        className="project-image"
-      />
+      <div className="logo-container">
+        <img src={project.img} height="60px" width="60px" alt="Logo" />
+      </div>
+
+      <h1 className="title">{project.title}</h1>
       <p className="project-description">{project.description}</p>
+
       <div className="tag-container">
         <span
           className="tag"
@@ -36,6 +37,18 @@ const ProjectItem = (props) => {
         >
           {project.skills[3]}
         </span>
+      </div>
+      <div className="links-container">
+        <a href="https://github.com/dardon5/" target="_blank" rel="noreferrer">
+          <img src="assets/github-logo.png" alt="Github Logo" />
+        </a>
+        {project.liveDemo ? (
+          <a href={project.link} target="_blank" rel="noreferrer">
+            <img src="assets/go-to.png" alt="Live Demo" />
+          </a>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
