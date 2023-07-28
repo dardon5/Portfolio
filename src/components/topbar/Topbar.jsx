@@ -8,7 +8,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <div className="logo-container">
             <a href="#intro">
               <img
-                src="assets/full-stack.png"
+                src="assets/logo.png"
                 height="40px"
                 width="40px"
                 alt="Logo"
