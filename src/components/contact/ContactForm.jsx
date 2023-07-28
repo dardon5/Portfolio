@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contactForm.scss";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef();
+  const [formStatus, setFormStatus] = useState("Send");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -17,9 +18,11 @@ const ContactForm = () => {
       )
       .then((result) => {
         console.log(result.text);
+        setFormStatus("Success");
       })
       .catch((error) => {
         console.log(error.text);
+        setFormStatus("Error");
       });
   };
 
@@ -63,7 +66,7 @@ const ContactForm = () => {
         </div>
         <div className="send-button-container">
           <button className="send-button" type="submit" value="Send">
-            Send
+            {formStatus}
           </button>
         </div>
       </form>
