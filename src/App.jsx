@@ -9,6 +9,9 @@ import Contact from "./components/contact/Contact";
 
 import "./app.scss";
 import { useState } from "react";
+import emailjs from "emailjs-com";
+
+emailjs.init("alejandro_dardon@hotmail.com");
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -51,6 +51,9 @@
     max-width: 25px; /* Set a maximum width for the images */
     max-height: 25px; /* Set a maximum height for the images */
     margin-right: 10px;
+    &:hover {
+      opacity: 0.5;
+    }
 
     @include mobile {
       max-width: 25px; /* Adjust image size on smaller screens */
