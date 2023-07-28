@@ -13,7 +13,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Ernesto Gutierrez",
-      title: "CEO & President @SESA de C.V.",
+      title: "CEO @SESA de C.V.",
       img: "assets/person.png",
       icon: "assets/linkedin.png",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",

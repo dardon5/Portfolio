@@ -1,0 +1,60 @@
+/* contactForm.scss */
+
+@import "../../global.scss";
+
+.container {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .form-label {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: $textColor;
+        opacity: 0.8;
+      }
+
+      .form-control {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .send-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .send-button {
+      background-color: #20c997;
+      color: #fff;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #18a581;
+      }
+
+      &:active {
+        background-color: #12866f;
+      }
+    }
+  }
+}
