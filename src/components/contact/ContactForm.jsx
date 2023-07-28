@@ -10,10 +10,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_yr728p2",
-        "template_czg0jvi",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "xsjkPa0kVD3RyEags"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then((result) => {
         console.log(result.text);
