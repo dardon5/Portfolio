@@ -6,7 +6,12 @@ const ProjectItem = (props) => {
   return (
     <div className="portfolio-item">
       <div className="logo-container">
-        <img src={project.img} height="60px" width="60px" alt="Logo" />
+        <img
+          src={project.img}
+          height={project.imgHeight}
+          width={project.imgWidth}
+          alt="Logo"
+        />
       </div>
 
       <h1 className="title">{project.title}</h1>
@@ -39,9 +44,17 @@ const ProjectItem = (props) => {
         </span>
       </div>
       <div className="links-container">
-        <a href="https://github.com/dardon5/" target="_blank" rel="noreferrer">
-          <img src="assets/github-logo.png" alt="Github Logo" />
-        </a>
+        {project.github ? (
+          <a
+            href="https://github.com/dardon5/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/github-logo.png" alt="Github Logo" />
+          </a>
+        ) : (
+          ""
+        )}
         {project.liveDemo ? (
           <a href={project.link} target="_blank" rel="noreferrer">
             <img src="assets/go-to.png" alt="Live Demo" />
