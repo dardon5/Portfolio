@@ -1,63 +1,65 @@
 @import "../../global.scss";
 
-/* Assuming you have imported font-awesome CSS for GitHub icon */
-/* Add more styles to customize the look and feel of the PortfolioItem */
+$baseFontSize: 16px;
+
 .portfolio-item {
   position: relative;
-  width: 300px;
+  width: 18.75rem;
   border: 1px solid $colorOne;
   background-color: $colorOne;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 10px;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+  margin: 0.625rem;
 }
+
 .logo-container {
   display: flex;
   justify-content: center;
 }
+
 .title {
   color: $alternate;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 25px;
+  margin-bottom: 0.3125rem;
+  margin-top: 1.5625rem;
 }
 
 .project-description {
   color: $textColor;
-  font-size: 15px;
+  font-size: 0.9375rem;
   opacity: 0.8;
 }
 
 .tag-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .tag {
   color: $textColor;
-  padding: 4px 8px;
-  margin-right: 8px;
-  border-radius: 4px;
-  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 
 .links-container {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   img {
-    max-width: 25px; /* Set a maximum width for the images */
-    max-height: 25px; /* Set a maximum height for the images */
-    margin-right: 10px;
+    max-width: 1.5625rem;
+    max-height: 1.5625rem;
+    margin-right: 0.625rem;
     &:hover {
       opacity: 0.5;
     }
 
     @include mobile {
-      max-width: 25px; /* Adjust image size on smaller screens */
-      max-height: 25px;
+      max-width: 1.5625rem;
+      max-height: 1.5625rem;
     }
   }
 }
