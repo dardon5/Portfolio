@@ -6,8 +6,25 @@ $textColorAlternate: #5b5e61;
 
 $width: 768px;
 
+$tinyLow: 320px;
+$tinyHigh: 480px;
+$tabletLow: 481px;
+$tabletHigh: 768px;
+
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$tabletLow}) and (max-width: #{$tabletHigh} ) {
+    @content;
+  }
+}
+
+@mixin tiny {
+  @media (min-width: #{$tinyLow}) and (max-width: #{$tinyHigh}) {
     @content;
   }
 }

@@ -24,7 +24,6 @@ const Intro = () => {
             <span ref={textRef}></span>
           </h3>
           <div className="image-container">
-            {/* <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a> */}
             <img src="assets/react_logo.png" alt="React Logo" />
             <img src="assets/node_logo.png" alt="Node Logo" />
             <img src="assets/mongo_logo.png" alt="Mongo Logo" />
