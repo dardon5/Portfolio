@@ -107,7 +107,7 @@ export const fullStackPortfolio = [
     imgHeight: "60px",
     imgWidth: "140px",
     description:
-      "A full stack ecommerce where clients can browse the latest electronic components the company has to offer.",
+      "A full stack mobile application where clients can browse their favorite restaurants and order food.",
     skills: ["React", "GMaps SDK API", "Firebase"],
     skillColors: ["#20c997", "#20c997", "#20c997"],
     github: "https://github.com",

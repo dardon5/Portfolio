@@ -8,6 +8,15 @@ $baseFontSize: 16px;
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
+
+  @include small {
+    padding-top: 1.5rem;
+    min-height: calc(155vh - 70px);
+  }
+  @include tiny {
+    padding-top: 1.5rem;
+    min-height: calc(145vh - 70px);
+  }
 }
 
 .title-container {
@@ -22,6 +31,9 @@ $baseFontSize: 16px;
   margin-bottom: 0.625rem;
   color: $textColor;
   opacity: 0.05;
+  @include mobile {
+    visibility: hidden;
+  }
 }
 
 .main-title {
@@ -47,6 +59,12 @@ $baseFontSize: 16px;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3.125rem;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     width: 60%;
     margin-left: 3.125rem;
@@ -71,9 +89,19 @@ $baseFontSize: 16px;
     width: 30%;
     color: $textColor;
     align-items: center;
+
+    @include mobile {
+      margin-top: 3rem;
+    }
+
     p {
       color: rgba(255, 255, 255, 0.8);
       margin-bottom: 1.25rem;
+
+      @include tiny {
+        display: none;
+      }
+
       &::after {
         content: "";
         display: block;
@@ -100,6 +128,14 @@ $baseFontSize: 16px;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       padding: 0.625rem 2.5rem;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+
+      @include tiny {
+        width: 100%;
+        font-size: small;
+      }
     }
     .download:hover {
       background-color: #17a389;
@@ -112,9 +148,13 @@ $baseFontSize: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.125rem;
+  padding: 1.5rem; // Adjust this value as needed
   width: 100%;
   position: relative;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .statistic {
@@ -125,6 +165,7 @@ $baseFontSize: 16px;
   text-align: center;
   max-width: calc(25% - 1.25rem);
   color: $textColor;
+  margin-bottom: 1.5rem; // Add margin to create space between statistics
 }
 
 .number {
