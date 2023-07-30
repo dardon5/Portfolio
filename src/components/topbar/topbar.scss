@@ -1,14 +1,10 @@
 @import "../../global.scss";
 
-/* topbar.scss */
-
-// Define the base font size for your website (usually set in the global.scss file)
-// Replace '16px' with the desired base font size (e.g., '16px' = 1rem)
 $baseFontSize: 16px;
 
 .topbar {
   width: 100%;
-  height: 4.375rem; // 70px in rem units
+  height: 4.375rem;
   background-color: $colorOne;
   color: $textColor;
   position: fixed;
@@ -17,7 +13,7 @@ $baseFontSize: 16px;
   transition: all 1s ease;
 
   .wrapper {
-    padding: 0.625rem 1.875rem; // 10px 30px in rem units
+    padding: 0.625rem 1.875rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,18 +27,23 @@ $baseFontSize: 16px;
       }
 
       .logo {
-        font-size: 2.5rem; // 40px in rem units
+        font-size: 2.5rem;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
-        margin-right: 2.5rem; // 40px in rem units
+        margin-right: 2.5rem;
       }
     }
 
     .right {
+      // Add media query to hide the right div on smaller screens
+      @include mobile {
+        display: none;
+      }
+
       .hamburger {
-        width: 2rem; // 32px in rem units
-        height: 1.5625rem; // 25px in rem units
+        width: 2rem;
+        height: 1.5625rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -50,7 +51,7 @@ $baseFontSize: 16px;
 
         span {
           width: 100%;
-          height: 0.1875rem; // 3px in rem units
+          height: 0.1875rem;
           background-color: $textColor;
           transform-origin: left;
           transition: all 2s ease;
