@@ -1,20 +1,23 @@
 @import "../../global.scss";
 
+$baseFontSize: 16px;
+
 .portfolioList {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   opacity: 0.8;
   color: $textColor;
-  margin: 0px 30px 30px 30px;
-  padding: 10px 50px;
-  border-radius: 10px;
+  margin: 0.9375rem 1.875rem 1.875rem 1.875rem;
+  padding: 0.625rem 3.125rem;
+  border-radius: 0.625rem;
   cursor: pointer;
 
   @include mobile {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
+
   &:hover {
-    background-color: $alternate; /* Add a background color on hover */
+    background-color: $alternate;
     opacity: 1;
   }
 

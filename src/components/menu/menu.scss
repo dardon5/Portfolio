@@ -1,12 +1,14 @@
 @import "../../global.scss";
 
+$baseFontSize: 16px;
+
 .menu {
-  width: 300px;
+  width: 18.75rem;
   height: 100vh;
   background-color: $alternate;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -18.75rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -22,13 +24,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 300;
     color: $textColor;
     width: 60%;
 
     li {
-      margin-bottom: 25px;
+      margin-bottom: 1.5625rem;
       a {
         font-size: inherit;
         color: inherit;

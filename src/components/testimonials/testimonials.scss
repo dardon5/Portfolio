@@ -1,56 +1,57 @@
 @import "../../global.scss";
 
+/* testimonials.scss */
+
+$baseFontSize: 16px;
+
 .testimonials {
   background-color: $colorOne;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 
   .title-container {
     position: relative;
     text-align: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     overflow: hidden;
   }
 
   .background-title {
-    font-size: 135px;
-    margin-bottom: 10px;
+    font-size: 8.4375rem;
+    margin-bottom: 0.625rem;
     color: $textColor;
     opacity: 0.05;
-
     @include mobile {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
 
   .main-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: $textColor;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @include mobile {
-      font-size: 20px;
-    }
-
     &::after {
       content: "";
       display: block;
-      width: 46px;
-      height: 3px;
+      width: 2.875rem;
+      height: 0.1875rem;
       background-color: $alternate;
-      margin: 0 125px;
-      margin-left: 100px;
+      margin: 0 7.8125rem;
+      margin-left: 6.25rem;
     }
-
     @include mobile {
-      font-size: 25px;
+      font-size: 1.5625rem;
+      &::after {
+        width: 2.5rem;
+        margin: 0 3.125rem;
+      }
     }
   }
 
@@ -60,82 +61,71 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     @include mobile {
       flex-direction: column;
       height: 100%;
     }
-
     .card {
-      width: 250px;
+      width: 15.625rem;
       height: 70%;
-      border-radius: 10px;
-      box-shadow: 0px 0px 15px -8px black;
+      border-radius: 0.625rem;
+      box-shadow: 0px 0px 0.9375rem -0.5rem black;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 20px;
+      padding: 1.25rem;
       transition: all 1s ease;
       background-color: $colorTwo;
-
       @include mobile {
-        height: 180px;
-        margin: 10px 0;
+        height: 9rem;
+        margin: 0.625rem 0;
       }
-
       &.featured {
-        width: 300px;
+        width: 18.75rem;
         height: 75%;
-        margin: 0 30px;
-
+        margin: 0 1.875rem;
         @include mobile {
-          width: 250px;
-          height: 180px;
-          margin: 1px;
+          width: 15.625rem;
+          height: 9rem;
+          margin: 0.0625rem;
         }
       }
-
       &:hover {
         transform: scale(1.1);
       }
-
       .top {
         display: flex;
         align-items: center;
         justify-content: center;
-
         img {
           &.left,
           &.right {
-            height: 25px;
+            height: 1.5625rem;
           }
           &.user {
-            height: 80px;
-            width: 80px;
+            height: 5rem;
+            width: 5rem;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 30px;
-
+            margin: 1.875rem;
             @include mobile {
-              width: 30px;
-              height: 30px;
+              width: 1.875rem;
+              height: 1.875rem;
             }
           }
         }
       }
-
       .center {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        border-radius: 10px;
+        padding: 0.625rem;
+        border-radius: 0.625rem;
         color: $textColor;
         opacity: 0.8;
-
         @include mobile {
-          font-size: 12px;
-          padding: 5px;
+          font-size: 0.75rem;
+          padding: 0.3125rem;
         }
       }
       .bottom {
@@ -143,20 +133,18 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-
         h2 {
-          margin-bottom: 5px;
+          margin-bottom: 0.3125rem;
           color: $textColor;
           font-weight: bold;
-
           @include mobile {
-            font-size: 14px;
+            font-size: 0.875rem;
           }
         }
         h3 {
           color: $alternate;
           @include mobile {
-            font-size: 13px;
+            font-size: 0.8125rem;
           }
         }
       }
