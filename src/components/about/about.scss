@@ -52,6 +52,9 @@ $baseFontSize: 16px;
     background-color: $alternate;
     margin: 0 auto;
   }
+  @include mobile {
+    font-size: 1.5625rem;
+  }
 }
 
 .information-container {
