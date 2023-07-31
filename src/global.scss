@@ -10,6 +10,7 @@ $tinyLow: 320px;
 $tinyHigh: 480px;
 $tabletLow: 481px;
 $tabletHigh: 768px;
+$largeLow: 769px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
@@ -25,6 +26,12 @@ $tabletHigh: 768px;
 
 @mixin tiny {
   @media (min-width: #{$tinyLow}) and (max-width: #{$tinyHigh}) {
+    @content;
+  }
+}
+
+@mixin computer {
+  @media (min-width: #{$largeLow}) {
     @content;
   }
 }

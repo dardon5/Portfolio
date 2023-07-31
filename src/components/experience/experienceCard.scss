@@ -8,7 +8,8 @@ $baseFontSize: 16px;
   flex-direction: column;
   background-color: $colorTwo;
   border-radius: 0.625rem;
-  width: 40%;
+
+  max-width: 25rem;
 
   .years-container {
     width: 25%;
@@ -28,11 +29,20 @@ $baseFontSize: 16px;
     color: $alternate;
     margin: 0px 1.25rem;
     font-size: 1.125rem;
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
   }
   .information {
     color: $textColor;
     opacity: 0.8;
     margin: 0px 1.25rem;
     padding: 1.25rem 0px;
+    @include tiny {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }
