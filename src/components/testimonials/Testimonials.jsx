@@ -8,7 +8,7 @@ const Testimonials = () => {
       title: "CTO @Swift",
       img: "assets/person.png",
       icon: "assets/linkedin.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      desc: "Working with you is an absolute pleasure. Your strong work ethic makes you a standout contributor to our team. ",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const Testimonials = () => {
       title: "CEO @SESA de C.V.",
       img: "assets/person.png",
       icon: "assets/linkedin.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "Your dedication to your craft is truly inspiring. You consistently bring an infectious enthusiasm to our software development projects, and your passion shines through in the way you tackle challenges with creativity.",
       featured: true,
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       title: "E&Q Engineer @TPC",
       img: "assets/person.png",
       icon: "assets/linkedin.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      desc: "Alejandro is that one developer everyone loves to have on their team, his passion for coding is contagious! You can see the excitement in his eyes as he dives into projects, and his commitment to delivering top-notch work never fails to inspire!",
     },
   ];
   return (
