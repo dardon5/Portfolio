@@ -31,7 +31,7 @@ $largeLow: 769px;
 }
 
 @mixin computer {
-  @media (min-width: #{$largeLow}) {
+  @media (min-width: 769px) and (max-width: 879px) {
     @content;
   }
 }

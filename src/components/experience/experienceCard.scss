@@ -19,18 +19,52 @@ $baseFontSize: 16px;
     text-align: center;
     padding: 0.3125rem;
     margin: 0.9375rem 1.25rem;
+    @include tiny{
+      font-size: 0.8rem;
+    }
+    @include small{
+      font-size: 0.9rem;
+    }
+    @include computer{
+      font-size: 1rem;
+    }
   }
   .title {
     color: $textColor;
     margin: 0px 1.25rem 0.3125rem 1.25rem;
     font-size: 1.75rem;
+    
+    @include tiny{
+      font-size: 1.2rem;
+      overflow-wrap: break-word;
+      inline-size: 10rem;
+    }
+    @include small{
+      font-size: 1.4rem;
+    }
+    @include computer{
+      font-size: 1.6rem;
+    }
   }
   .place {
     color: $alternate;
     margin: 0px 1.25rem;
     font-size: 1.125rem;
-    @include mobile {
-      margin-bottom: 1.5rem;
+    
+    @include tiny {
+      font-size: 1rem;
+      overflow-wrap: break-word;
+      inline-size:
+       10rem;
+       margin-bottom: 1.5rem;
+    }
+    @include small{
+      font-size: 1.05rem;
+      overflow-wrap: break-word;
+      inline-size: 12rem;
+    }
+    @include computer{
+      font-size: 1.1rem;
     }
   }
   .information {
@@ -41,8 +75,12 @@ $baseFontSize: 16px;
     @include tiny {
       display: none;
     }
-    @include mobile {
-      display: none;
+    @include small {
+      overflow-wrap: break-word;
+      font-size: 0.8rem;
+    }
+    @include computer{
+      font-size: 0.9rem;
     }
   }
 }
