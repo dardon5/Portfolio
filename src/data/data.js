@@ -102,10 +102,10 @@ export const fullStackPortfolio = [
   },
   {
     id: 5,
-    title: "Swift",
+    title: "Startup X (NDA)",
     img: "assets/logo.png",
     imgHeight: "60px",
-    imgWidth: "140px",
+    imgWidth: "60px",
     description:
       "A full stack mobile application where clients can browse their favorite restaurants and order food.",
     skills: ["React", "GMaps SDK API", "Firebase"],
