@@ -103,7 +103,7 @@ export const fullStackPortfolio = [
   {
     id: 5,
     title: "Swift",
-    img: "assets/swift.png",
+    img: "assets/logo.png",
     imgHeight: "60px",
     imgWidth: "140px",
     description:

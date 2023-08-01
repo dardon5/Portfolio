@@ -43,7 +43,7 @@ export const experience = [
     id: 6,
     years: "2023 - Present",
     title: "Software Engineer I",
-    place: "Swift",
+    place: "Startup (NDA)",
     information:
       "Currently working on the development of a full-stack mobile application using React native and AWS for a food delivery system.",
   },
