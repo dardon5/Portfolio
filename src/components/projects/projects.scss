@@ -8,6 +8,7 @@ $baseFontSize: 16px;
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
+  min-height: calc(12em + 10rem);
 
   .title-container {
     position: relative;
