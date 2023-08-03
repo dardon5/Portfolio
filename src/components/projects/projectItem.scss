@@ -10,11 +10,16 @@ $baseFontSize: 16px;
   border-radius: 0.9375rem;
   padding: 1.25rem;
   margin: 0.625rem;
+  @include mobile {
+    width: 15rem;
+  }
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
+  img {
+  }
 }
 
 .title {
@@ -23,12 +28,18 @@ $baseFontSize: 16px;
   font-weight: bold;
   margin-bottom: 0.3125rem;
   margin-top: 1.5625rem;
+  @include mobile {
+    font-size: 1rem;
+  }
 }
 
 .project-description {
   color: $textColor;
   font-size: 0.9375rem;
   opacity: 0.8;
+  @include mobile {
+    font-size: 0.8rem;
+  }
 }
 
 .tag-container {
@@ -44,6 +55,9 @@ $baseFontSize: 16px;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   font-weight: bold;
+  @include mobile {
+    font-size: 0.65rem;
+  }
 }
 
 .links-container {
@@ -58,8 +72,8 @@ $baseFontSize: 16px;
     }
 
     @include mobile {
-      max-width: 1.5625rem;
-      max-height: 1.5625rem;
+      max-width: 1.15rem;
+      max-height: 1.15rem;
     }
   }
 }

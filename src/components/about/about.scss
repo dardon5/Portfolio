@@ -8,15 +8,6 @@ $baseFontSize: 16px;
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
-
-  @include small {
-    padding-top: 1.5rem;
-    min-height: calc(155vh - 70px);
-  }
-  @include tiny {
-    padding-top: 1.5rem;
-    min-height: calc(145vh - 70px);
-  }
 }
 
 .title-container {
@@ -24,6 +15,10 @@ $baseFontSize: 16px;
   text-align: center;
   width: 100%;
   margin-bottom: 1.875rem;
+  @include mobile {
+    margin-bottom: 0;
+    max-height: 9.875rem;
+  }
 }
 
 .background-title {
@@ -33,6 +28,8 @@ $baseFontSize: 16px;
   opacity: 0.05;
   @include mobile {
     visibility: hidden;
+    margin-bottom: 0;
+    max-height: 9.875rem;
   }
 }
 
@@ -121,6 +118,7 @@ $baseFontSize: 16px;
     }
     .email {
       color: $alternate;
+      word-wrap: break-word;
     }
     .download {
       background-color: $alternate;

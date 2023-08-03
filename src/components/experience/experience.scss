@@ -10,16 +10,16 @@ $baseFontSize: 16px;
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
+  min-height: calc(15em + 10rem);
 
   @include tiny {
     min-height: calc(180vh - 70px);
   }
   @include small {
-    min-height: calc(198vh - 70px);
+    min-height: calc(205vh - 70px);
   }
-    @include computer{
-      min-height: calc(300vh - 70px);
-
+  @include computer {
+    min-height: calc(300vh - 70px);
   }
 
   .title-container {
@@ -27,7 +27,7 @@ $baseFontSize: 16px;
     text-align: center;
     width: 100%;
     margin-bottom: 1.875rem;
-    @include mobile{
+    @include mobile {
       overflow: visible;
     }
   }

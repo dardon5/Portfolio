@@ -68,7 +68,7 @@ $baseFontSize: 16px;
   height: 60%;
 
   @include mobile {
-    width: 100%;
+    width: 30%;
   }
 }
 
@@ -111,14 +111,14 @@ $baseFontSize: 16px;
   }
 
   img {
-    max-width: 2.5rem;
-    max-height: 2.5rem;
+    max-width: 2.8rem;
+    max-height: 2.8rem;
     margin-right: 0.625rem;
     margin-top: 1.25rem;
 
     @include mobile {
-      max-width: 1.5625rem;
-      max-height: 1.5625rem;
+      max-width: 1.9625rem;
+      max-height: 1.9625rem;
     }
     &:hover {
       opacity: 0.5;

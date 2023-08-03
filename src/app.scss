@@ -13,16 +13,9 @@
     }
 
     > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
+      width: 100%;
+      min-height: calc(100vh - 70px);
       scroll-snap-align: start;
-    }
-
-    .experience {
-      height: calc(150vh - 70px);
-    }
-    .projects {
-      height: calc(120vh - 70px);
     }
   }
 }
