@@ -8,16 +8,6 @@ $baseFontSize: 16px;
   flex-direction: column;
   align-items: center;
   padding-top: 2.5rem;
-  min-height: calc(120vh - 70px);
-
-  @include small {
-    padding-top: 1.5rem;
-    min-height: calc(170vh - 70px);
-  }
-  @include tiny {
-    padding-top: 1.5rem;
-    min-height: calc(155vh - 70px);
-  }
 }
 
 .title-container {

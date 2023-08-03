@@ -1,4 +1,20 @@
+import React from "react";
 import "./testimonials.scss";
+
+const TestimonialCard = ({ name, title, img, icon, desc, featured }) => (
+  <div className={`card ${featured ? "featured" : ""}`}>
+    <div className="top">
+      <img src="assets/right-arrow.png" className="left" alt="" />
+      <img className="user" src={img} alt="" />
+      <img className="right" src={icon} alt="" />
+    </div>
+    <div className="center">{desc}</div>
+    <div className="bottom">
+      <h2>{name}</h2>
+      <h3>{title}</h3>
+    </div>
+  </div>
+);
 
 const Testimonials = () => {
   const data = [
@@ -8,7 +24,7 @@ const Testimonials = () => {
       title: "CTO @Swift",
       img: "assets/person.png",
       icon: "assets/linkedin.png",
-      desc: "Working with you is an absolute pleasure. Your strong work ethic makes you a standout contributor to our team. ",
+      desc: "Working with you is an absolute pleasure. Your strong work ethic makes you a standout contributor to our team.",
     },
     {
       id: 2,
@@ -17,7 +33,6 @@ const Testimonials = () => {
       img: "assets/person.png",
       icon: "assets/linkedin.png",
       desc: "Your dedication to your craft is truly inspiring. You consistently bring an infectious enthusiasm to our software development projects, and your passion shines through in the way you tackle challenges with creativity.",
-      featured: true,
     },
     {
       id: 3,
@@ -28,6 +43,7 @@ const Testimonials = () => {
       desc: "Alejandro is that one developer everyone loves to have on their team, his passion for coding is contagious! You can see the excitement in his eyes as he dives into projects, and his commitment to delivering top-notch work never fails to inspire!",
     },
   ];
+
   return (
     <div className="testimonials" id="testimonials">
       <div className="title-container">
@@ -36,18 +52,7 @@ const Testimonials = () => {
       </div>
       <div className="container">
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
-            <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
-              <img className="user" src={d.img} alt="" />
-              <img className="right" src={d.icon} alt="" />
-            </div>
-            <div className="center">{d.desc}</div>
-            <div className="bottom">
-              <h2>{d.name}</h2>
-              <h3>{d.title}</h3>
-            </div>
-          </div>
+          <TestimonialCard key={d.id} {...d} />
         ))}
       </div>
     </div>
