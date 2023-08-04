@@ -88,20 +88,6 @@ export const fullStackPortfolio = [
   },
   {
     id: 4,
-    title: "Yulee Electronics",
-    img: "assets/full-stack.png",
-    imgHeight: "60px",
-    imgWidth: "60px",
-    description:
-      "A full stack ecommerce where clients can browse the latest electronic components the company has to offer.",
-    skills: ["MERN", "Redux", "Strapi", "JWT"],
-    skillColors: ["#20c997", "#20c997", "#20c997", "#20c997"],
-    github: "https://github.com",
-    liveDemo: false,
-    link: "",
-  },
-  {
-    id: 5,
     title: "Startup X (NDA)",
     img: "assets/logo.png",
     imgHeight: "60px",
@@ -147,20 +133,6 @@ export const backEndPortfolio = [
   },
   {
     id: 3,
-    title: "Yulee Electronics",
-    img: "assets/full-stack.png",
-    imgHeight: "60px",
-    imgWidth: "60px",
-    description:
-      "A full stack ecommerce where clients can browse the latest electronic components the company has to offer.",
-    skills: ["MERN", "Redux", "Strapi", "JWT"],
-    skillColors: ["#20c997", "#20c997", "#20c997", "#20c997"],
-    github: "https://github.com",
-    liveDemo: false,
-    link: "",
-  },
-  {
-    id: 4,
     title: "RapiDoc",
     img: "assets/logo.png",
     imgHeight: "60px",
