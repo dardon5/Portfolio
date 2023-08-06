@@ -2,7 +2,7 @@ export const frontEndPortfolio = [
   {
     id: 1,
     title: "SESA",
-    img: "assets/sesa.png",
+    img: "https://projectsesaimage.s3.us-east-2.amazonaws.com/sesa.png",
     imgHeight: "60px",
     imgWidth: "150px",
     description:
@@ -47,7 +47,7 @@ export const fullStackPortfolio = [
   {
     id: 1,
     title: "IMS",
-    img: "assets/sesa.png",
+    img: "https://projectsesaimage.s3.us-east-2.amazonaws.com/sesa.png",
     imgHeight: "60px",
     imgWidth: "150px",
     description:
