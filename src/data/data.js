@@ -106,7 +106,7 @@ export const backEndPortfolio = [
   {
     id: 1,
     title: "IMS",
-    img: "assets/sesa.png",
+    img: "https://projectsesaimage.s3.us-east-2.amazonaws.com/sesa.png",
     imgHeight: "60px",
     imgWidth: "150px",
     description:
