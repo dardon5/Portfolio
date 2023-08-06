@@ -75,7 +75,7 @@ export default function Projects() {
       </ul>
       <div className="portfolio-container">
         {data.map((d) => (
-          <ProjectItem project={d} key={d.id} />
+          <ProjectItem project={d} key={d.description} />
         ))}
       </div>
     </div>
