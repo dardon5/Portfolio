@@ -28,9 +28,6 @@ export default function Projects() {
     },
   ];
 
-  // Use useRef to hold the interval ID
-  const intervalRef = useRef(null);
-
   useEffect(() => {
     switch (selected) {
       case "fullStackPortfolio":
@@ -45,16 +42,6 @@ export default function Projects() {
       default:
         setData(fullStackPortfolio);
     }
-    // Clear previous interval and set a new one to switch tabs every 5 seconds
-    clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(() => {
-      const currentIndex = list.findIndex((item) => item.id === selected);
-      const nextIndex = (currentIndex + 1) % list.length;
-      setSelected(list[nextIndex].id);
-    }, 100000);
-
-    // Clean up the interval on component unmount
-    return () => clearInterval(intervalRef.current);
   }, [selected, list]);
 
   return (

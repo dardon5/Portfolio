@@ -1,6 +1,6 @@
 import "./portfolioList.scss";
 
-export default function PortfolioList({ id, title, active, setSelected }) {
+const PortfolioList = ({ id, title, active, setSelected }) => {
   return (
     <li
       className={active ? "portfolioList active" : "portfolioList"}
@@ -9,4 +9,6 @@ export default function PortfolioList({ id, title, active, setSelected }) {
       {title}
     </li>
   );
-}
+};
+
+export default PortfolioList;
