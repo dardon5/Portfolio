@@ -1,5 +1,7 @@
 import "./topbar.scss";
 
+//Navigation Bar
+
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
